@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Exercício 10 | DEV Front End</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,800;1,200&display=swap"
@@ -11,56 +11,127 @@
     />
   </head>
 
-<script src="index.js"></script>
-<body>
+  <script src="index.js"></script>
+  <body>
     <div id="corpo">
-        <div class="questao">
-            <h1>Questão 01:<span>Média ponderada de 3 notas
-                    <a href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1006"
-                        target="_blank">detalhar</a></span></h1>
-            <p id="media">Insira as três notas para Calculara média.</p>
-            <label for="nota01">Nota 01:</label>
-            <input type="text" id="nota01">
-            <label for="nota02">Nota 02:</label>
-            <input type="text" id="nota02">
-            <label for="nota03">Nota 03:</label>
-            <input type="text" id="nota03">
-            <input type="button" value="Calcular" onclick="media()">
-        </div>
-        <div class="questao">
-            <h1>Questão 02:<span> Senha Fixa <a href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1114"
-                        target="_blank">detalhar</a></span></h1>
-            <p id="senha">Digite seus dados de acesso ao sistema:</p>
-            <label for="senhaDigitada">Digite a senha:</label>
-            <input type="password" id="senhaDigitada">
-            <input type="button" value="Calcular" onclick="senhaFixa()">
-        </div>
-        <div class="questao">
-            <h1>Questão 03:<span> Intervalo [0,25], [25,50], [50,75], [75,100] <a
-                        href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1037"
-                        target="_blank">detalhar</a></span></h1>
-            <p id="noIntervalo">Digite um valor para saber o seu respectivo intervalo.</p>
-            <label for="valor">Valor:</label>
-            <input type="text" id="valor">
-            <input type="button" value="Calcular" onclick="qualIntervalo()">
-        </div>
-        <div class="questao">
-            <h1>Questão 04:<span> Aumento de Salário <a
-                        href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1048"
-                        target="_blank">detalhar</a></span></h1>
-            <p id="novoSalario">Informe seu salário para conferência do reajuste aplicado.</p>
-            <label for="salarioAtual">Salário atual:</label>
-            <input type="text" id="salarioAtual">
-            <input type="button" value="Calcular" onclick="novoSalario()">
-        </div>
-        <div class="questao">
-            <h1>Questão 05:<span> Imposto de Renda <a
-                        href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1051"
-                        target="_blank">detalhar</a></span></h1>
-            <p id="impostoAPagar">Insira sua renda para aferição do imposto atribuído.</p>
-            <label for="renda">Renda:</label>
-            <input type="text" id="renda">
-            <input type="button" value="Calcular" onclick="impostoAPagar()">
-        </div>
+      <div class="questao">
+        <h1>Questão #01:</h1>
+        <span>Média ponderada de 3 notas</span> <br />
+        <a
+          href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1006"
+          target="_blank"
+          >detalhar</a
+        >
+        <p id="media">Insira as três notas para Calculara média.</p>
+        <label for="nota01">Nota 01:</label>
+        <input type="text" id="nota01" />
+        <label for="nota02">Nota 02:</label>
+        <input type="text" id="nota02" />
+        <label for="nota03">Nota 03:</label>
+        <input type="text" id="nota03" />
+        <input type="button" value="Calcular" onclick="media()" />
+      </div>
+      <div class="questao">
+        <h1>Questão #02:</h1>
+        <span> Senha Fixa</span> <br />
+        <a
+          href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1114"
+          target="_blank"
+          >detalhar</a
+        >
+        <p id="senha">Digite seus dados de acesso ao sistema:</p>
+        <label for="senhaDigitada">Digite a senha:</label>
+        <input type="password" id="senhaDigitada" />
+        <input type="button" value="Calcular" onclick="senhaFixa()" />
+      </div>
+      <div class="questao">
+        <h1>Questão #03:</h1>
+        <span> Intervalo [0,25], [25,50], [50,75], [75,100] </span> <br />
+        <a
+          href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1037"
+          target="_blank"
+          >detalhar</a
+        >
+        <p id="noIntervalo">
+          Digite um valor para saber o seu respectivo intervalo.
+        </p>
+        <label for="valor">Valor:</label>
+        <input type="text" id="valor" />
+        <input type="button" value="Calcular" onclick="qualIntervalo()" />
+      </div>
+      <div class="questao">
+        <h1>Questão #04:</h1>
+        <span> Aumento de Salário </span> <br />
+        <a
+          href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1048"
+          target="_blank"
+          >detalhar</a
+        >
+        <p id="novoSalario">
+          Informe seu salário para conferência do reajuste aplicado.
+        </p>
+        <label for="salarioAtual">Salário atual:</label>
+        <input type="text" id="salarioAtual" />
+        <input type="button" value="Calcular" onclick="novoSalario()" />
+      </div>
+      <div class="questao">
+        <h1>Questão #05:</h1>
+        <span> Imposto de Renda </span> <br />
+        <a
+          href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1051"
+          target="_blank"
+          >detalhar</a
+        >
+        <p id="impostoAPagar">
+          Insira sua renda para aferição do imposto atribuído.
+        </p>
+        <label for="renda">Renda:</label>
+        <input type="text" id="renda" />
+        <input type="button" value="Calcular" onclick="impostoAPagar()" />
+      </div>
     </div>
+    <footer>
+      <div class="links">
+        <p>
+          <a href="https://www.github.com/mguilherm">
+            <img
+              src="img/github_icon-icons.com_69253.png"
+              width="50px"
+              weight="50px"
+              ;
+              alt="Github"
+            />Github</a
+          >
+        </p>
+        <p>
+          <a
+            href="https://www.linkedin.com/in/marcos-guilherme-barbosa-da-silva-8313121a4/"
+          >
+            <img
+              src="img/linkedin_icon-icons.com_53609.png"
+              width="50px"
+              weight="50px"
+              ;alt=""
+            />
+            LinkedIn</a
+          >
+        </p>
+        <p>
+          <a href="mailto:marcosguilherme.silva@outlook.com">
+            <img
+              src="img/Outlook_2013_23477.png"
+              width="50px"
+              weight="50px"
+              ;alt=""
+            />
+            Email</a
+          >
+        </p>
+      </div>
+
+      <div class="copyright">
+        <p>Feito por Marcos Guilherme Silva - Todos os direitos reservados</p>
+      </div>
+    </footer>
+  </body>
 </html>
